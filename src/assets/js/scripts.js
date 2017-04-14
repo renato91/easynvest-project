@@ -1,6 +1,6 @@
 function createElem(elem, object) {
-  let object = object[elem] || object;
-  let node;
+  var object = object[elem] || object;
+  var node;
   switch (elem) {
     case 'input':
       node = document.createElement('input');
@@ -43,23 +43,7 @@ function attachEvents() {
 
 }
 
-function saveData() {
-  let storedUsers = JSON.parse(localStorage.getItem('storedUsers')) || [];
-  let user = {
-    'name': document.getElementById('txtFullname').value,
-    'cpf': document.getElementById('txtCpf').value,
-    'phone': document.getElementById('txtTelefone').value,
-    'address': document.getElementById('txtAddress').value,
-    'complement': document.getElementById('txtComplement').value || "",
-    'image': document.getElementById('imgAvatar').src
-  };
 
-  storedUsers.push(user);
-
-  localStorage.setItem('storedUsers', JSON.stringify(storedUsers));
-
-  alert()
-}
 
 function fetchData() {
   window.fetch('./data/mock.json', {
@@ -97,4 +81,25 @@ function renderForm(data) {
   });
 
   attachEvents();
+}
+
+
+function saveData() {
+  let storedUsers = JSON.parse(localStorage.getItem('storedUsers')) || [];
+  let user = {
+    'name': document.getElementById('txtFullname').value,
+    'cpf': document.getElementById('txtCpf').value,
+    'phone': document.getElementById('txtTelefone').value,
+    'address': document.getElementById('txtAddress').value,
+    'complement': document.getElementById('txtComplement').value || "",
+    'image': document.getElementById('imgAvatar').src
+  };
+
+  storedUsers.push(user);
+
+  localStorage.setItem('storedUsers', JSON.stringify(storedUsers));
+
+  alert();
+
+  clearForm();
 }

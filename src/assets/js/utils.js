@@ -57,3 +57,13 @@ function getUploadedFile() {
     }
 
 }
+
+function clearForm(){
+    var input = document.querySelector('input');
+    var img = document.querySelector('img');
+    var map = document.getElementById('mapRenderer');
+
+    input.value = "";
+    img.src = "";
+    map.style.display = "none";
+}
