@@ -1,0 +1,65 @@
+{
+  "fields": {
+    "input":[
+{
+      "name": "txtFullname",
+      "id": "txtFullname",
+      "placeholder": "Nome completo",
+      "type": "text",
+      "class": "input"
+    },
+     {
+      "name": "txtCpf",
+      "id": "txtCpf",
+      "placeholder": "CPF",
+      "type": "text",
+      "Mask": "000.000.000-00",
+      "class": "input"
+    },
+     {
+      "name": "txtTelephone",
+      "id": "txtTelefone",
+      "placeholder": "Telefone",
+      "type": "text",
+      "Mask": "(00) 00000-0000",
+      "class": "input"
+    },
+     {
+      "name": "txtAddress",
+      "id": "txtAddress",
+      "placeholder": "Endereço",
+      "type": "text",
+      "class": "input"
+    },
+    {
+      "name": "txtComplement",
+      "id": "txtComplement",
+      "placeholder": "Complemento",
+      "type": "text",
+      "class": "input"
+    }
+    ],
+    "map": {
+      "name": "mapRenderer",
+      "id": "mapRenderer",
+      "class": "map-renderer"
+    },
+    
+    "upload": {
+      "name": "uplImage",
+      "id": "uplImage",
+      "class": "upload-button"
+    },
+    "image": {
+      "name": "imgAvatar",
+      "id": "imgAvatar",
+      "class": "image"
+    },
+    "button": {
+      "name": "btnSave",
+      "id": "btnSave",
+      "value": "Enviar",
+      "class": "input"
+    }
+  }
+}
