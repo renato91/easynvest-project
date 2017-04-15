@@ -95,11 +95,13 @@ function saveData() {
     'image': document.getElementById('imgAvatar').src
   };
 
-  storedUsers.push(user);
+  if (document.getElementById('txtFullname').value && document.getElementById('txtCpf').value && document.getElementById('txtAddress').value) {
+    storedUsers.push(user);
+    localStorage.setItem('storedUsers', JSON.stringify(storedUsers));
+    alert('Dados salvos com sucesso.');
+    clearForm();
+  }else{
+    alert('Por favor, preencha todos os dados.');
+  }
 
-  localStorage.setItem('storedUsers', JSON.stringify(storedUsers));
-
-  alert();
-
-  clearForm();
 }

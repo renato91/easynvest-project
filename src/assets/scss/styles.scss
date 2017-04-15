@@ -7,20 +7,9 @@ $color-danger: #F44336;
   padding: 0;
 }
 
-h1, div.input-wrapper::after, button {
+ div.input-wrapper::after, button {
   font-family: 'roboto', sans-serif;
   transition: all 0.3s ease-in-out;
-}
-
-h1 {
-  height: 100px;
-  width: 100%;
-  font-size: 18px;
-  background: darken($color, 4%);
-  color: white;
-  line-height: 150%;
-  border-radius: 3px 3px 0 0;
-  box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
 }
 
 form {
@@ -31,10 +20,6 @@ form {
   box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
   padding: 40px 0;
   border-radius: 3px;
-  // h1 {
-  //   box-sizing: border-box;
-  //   padding: 20px;
-  // }
 }
 
 input {
@@ -95,9 +80,6 @@ input[type='button'] {
   width: 90%;
   color: white;
   box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
-  &:hover {
-    // transform: translateY(-3px);
-  }
    &:focus {
      background: lighten($color-success, 30%)
   }

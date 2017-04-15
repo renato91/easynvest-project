@@ -59,7 +59,7 @@ function getUploadedFile() {
 }
 
 function clearForm(){
-    var input = document.querySelector('input');
+    var input = document.getElementsByTagName('input');
     var img = document.querySelector('img');
     var map = document.getElementById('mapRenderer');
 
