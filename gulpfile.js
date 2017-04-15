@@ -75,6 +75,6 @@ gulp.task('index-dist', function () {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('dist', ['compress-js', 'compress-css', 'index-dist']);
+gulp.task('dist', ['compress-js', 'compress-css', 'move-data', 'index-dist']);
 
 

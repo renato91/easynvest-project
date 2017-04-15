@@ -9,4 +9,4 @@ Para iniciar o projeto é necessário:
 
 ## Demo
 
-- [http://foamy-mailbox.surge.sh/](http://foamy-mailbox.surge.sh/)
+- [humdrum-coast.surge.sh](humdrum-coast.surge.sh)
